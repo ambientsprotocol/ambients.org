@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Site footer
+   ========================================================================== */
+
+.footer-wrapper {
+  height: 5em;
+
+  @include clearfix;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-left: 7vw;
+
+  background: $primary-black;
+  text-align: left;
+
+  p {
+    @include font-size(14);
+    color: $primary-white;
+    padding: 2em 0em;
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $primary-white;
+    &:hover {
+      color: $secondary-gray;
+    }
+  }
+  .footer-divider {
+    padding: 0 1vw;
+  }
+  .privacy {
+    font-family: $alt-font;
+  }
+}
+
+/*
+   Social media icons
+   ========================================================================== */
+
+.social-icons {
+  margin: 1em 0;
+
+  a {
+    padding: 4px 8px;
+  }
+}

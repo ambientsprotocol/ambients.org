@@ -1,0 +1,102 @@
+.center {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 8vw;
+  flex-wrap: wrap;
+
+  @include media($medium) {
+    flex-wrap: nowrap;
+  }
+
+  @include media($large) {
+    flex-wrap: nowrap;
+  }
+
+  p {
+    display: inline-flex;
+    margin: 0;
+    font-size: 1em;
+  }
+
+  svg path {
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+      -o-transition: all .2s ease;
+  }
+
+  svg {
+    margin: 0 1.5em;
+    margin-left: 0;
+  }
+
+  span {
+    margin: 1em 1em;
+    max-width: 2em;
+    white-space: pre;
+  }
+}
+
+.button {
+  margin-top: 1.5em;
+  svg path, a {
+    color: #ED4D17;
+    fill: #ED4D17;
+  }
+  &:hover {
+    a, svg path {
+      color: #EF6D3C !important;
+      fill: #EF6D3C !important;
+    }
+  }
+}
+
+.button-text-whitepaper {
+  max-width: 50%;
+  vertical-align: top;
+
+  @include media($medium) {
+    max-width: 40%;
+  }
+
+  @include media($large) {
+    max-width: 40%;
+  }
+}
+
+.button-text-community {
+  max-width: 20%;
+  vertical-align: top;
+}
+
+.intro {
+  padding-left: 8vw;
+  letter-spacing: 0em;
+  line-height: 1.8;
+  text-align: left;
+  color: $intro-text;
+
+  font-size: 1.0em;
+
+  @include media($medium) {
+    font-size: 1.15em;
+  }
+
+  @include media($large) {
+    font-size: 1.25em;
+  }
+}
+
+body {
+  margin-bottom: 0;
+  padding-bottom: 80px;
+}
+
+#privacy {
+  border-left: 0px;
+}

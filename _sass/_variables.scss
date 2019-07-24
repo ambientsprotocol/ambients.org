@@ -1,0 +1,68 @@
+// TYPOGRAPHY ================================================
+@font-face {
+  font-family: 'Saira Light';
+  src: url('../fonts/Saira-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saira Medium';
+  src: url('../fonts/Saira-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+ }
+
+$base-font                : 'Saira Light', sans-serif;
+$caption-font             : $base-font;
+$code-font                : $base-font;
+$alt-font                 : 'Saira Medium', sans-serif;
+$heading-font             : $base-font;
+
+$doc-font-size            : 16;
+$doc-line-height          : 24;
+
+$border-radius            : 3px;
+
+
+// set-up the body font-size / line-height
+body {
+  margin-top: 0px + $doc-line-height;
+  font-size: 0px + $doc-font-size;
+}
+
+// OrbitDB Branding Colors ======================================
+$primary-black            : #151924;
+$primary-color            : #FF3B00;
+$primary-gray             : #797979;
+$primary-white            : #ffffff;
+$secondary-black          : #000000;
+$secondary-color          : #797979;
+$secondary-gray           : #777777;
+$intro-text               : #4D4D4D;
+
+
+// COLORS =====================================================
+$body-color               : $primary-white;
+$text-color               : $primary-black;
+$base-color               : $primary-gray;
+$comp-color               : adjust-hue($base-color, 180); // Not sure about this
+$border-color             : $secondary-black;
+$white                    : $primary-white ;
+$black                    : $primary-black;
+$accent-color             : $secondary-black;
+$link-color               : $primary-color;
+
+$table-border-color       : $border-color;
+$table-border             : 1px solid $table-border-color;
+$table-background         : $body-color;
+$table-header-color       : lighten($table-background, 10);
+$table-hover-color        : darken($table-background, 2);
+$table-stripe-color       : darken($table-background, 4);
+$table-stripe-color-hover : darken($table-stripe-color, 5);
+
+// MEDIA QUERIES ==============================================
+$micro                    : "only screen and (min-width: 30em)";
+$small                    : "only screen and (min-width: 37.5em)";
+$medium                   : "only screen and (min-width: 48em)";
+$large                    : "only screen and (min-width: 62em)";
+$x-large                  : "only screen and (min-width: 86.375em)";

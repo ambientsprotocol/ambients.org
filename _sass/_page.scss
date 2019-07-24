@@ -1,0 +1,169 @@
+/* ==========================================================================
+   Page/post layout and styling
+   ========================================================================== */
+
+/* page header */
+
+.entry-header {
+	@include fill-parent;
+}
+
+/* tag listing in page header */
+
+.entry-tags {
+	margin: 2em 0 0;
+  padding: 0;
+	text-transform: uppercase;
+	@include font-size(16);
+	font-weight: 600;
+
+  a {
+    color: $text-color;
+    padding: 0 5px;
+  }
+
+  li {
+    display: inline-block;
+    margin-bottom: 0;
+
+    &:before {
+      content: "\2022";
+    }
+
+    &:first-child {
+
+      &:before {
+        content: "";
+      }
+
+      a {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+/* page title */
+
+span + .entry-title {
+	margin-top: 0;
+}
+
+.entry-title {
+	@include font-size(30,yes,30);
+	margin-bottom: 40px;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: -3px;
+	text-transform: capitalize;
+
+	a {
+		color: $black;
+		text-decoration: underline;
+	}
+
+	@include media($medium) {
+		@include font-size(40,yes,40);
+		padding-bottom: 40px;
+	}
+
+	@include media($large) {
+		@include font-size(50,yes,52);
+		padding-bottom: 60px;
+	}
+}
+
+/* page/post wrapper */
+
+.entry-wrapper {
+	@include outer-container;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-right: $gutter;
+	padding-left: $gutter;
+}
+
+
+/* main content block */
+
+.entry-content {
+  margin: 20vh 0;
+  border-left: 2px solid $primary-color;
+
+	@include span-columns(12);
+
+	@include media($medium) {
+			margin: 20vh 0;
+	}
+
+    @include media($large) {
+			margin: 20vh 0;
+    }
+
+	/* nice link underlines */
+  p > a,
+	li > a {
+		border-bottom: 1px dotted lighten($link-color, 50);
+
+		&:hover {
+			border-bottom-style: solid;
+		}
+	}
+}
+
+
+/*
+   Overrides
+   ========================================================================== */
+
+/* adjust width for lack of meta/author column */
+
+#page {
+	.entry-content {
+		// border-left: 0px;
+		padding-left: 5em;
+	}
+	margin-bottom: 9em;
+}
+
+#default,
+#page {
+
+	.entry-wrapper {
+		width: 83vw;
+    max-width: 54em;
+    margin-left: 1vw;
+    padding-right: 0;
+
+    @include media($medium) {
+      width: 80vw;
+      margin-left: 5vw;
+      padding-right: $gutter;
+    }
+
+    @include media($large) {
+      width: 90vw;
+      margin-left: 5vw;
+      padding-right: $gutter;
+    }
+	}
+
+	.entry-title {
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.entry-content {
+    margin-bottom: 2em;
+
+		@include span-columns(12);
+
+    @include media($medium) {
+      flex-wrap: wrap;
+    }
+
+    @include media($large) {
+      flex-wrap: wrap;
+    }
+	}
+}

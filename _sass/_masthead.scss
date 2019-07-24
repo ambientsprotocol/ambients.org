@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Masthead
+   ========================================================================== */
+
+.masthead {
+  margin-top: 30px;
+  @include clearfix;
+
+  @include media($medium) {
+    margin-top: 0;
+  }
+
+  .wrap {
+    text-align: center;
+    max-width: em(440);
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @include media($medium) {
+      max-width: em(728);
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+
+    @include media($large) {
+      max-width: em(960);
+    }
+  }
+
+  @include media($medium) {
+    margin-top: 0px;
+  }
+
+  @include media($large) {
+    margin-top: 10px;
+  }
+}
+
+/*
+   Site logo
+   ========================================================================== */
+
+.logo {
+  display: inline-block;
+  background-size: cover;
+
+  padding-left: 8vw;
+  font-size: 14vw;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-shadow: -1px 1px $primary-color;
+  font-family: $alt-font;
+  line-height: 1;
+
+  border-left: 3px solid black;
+  margin-left: -2px;
+
+  @include media($medium) {
+    font-size: 5em;
+  }
+
+  @include media($large) {
+    font-size: 6em;
+  }
+}
+
+/*
+   Site title/name
+   ========================================================================== */
+
+.site-title {
+  margin-bottom: 0;
+
+  a {
+    color: $black;
+  }
+}
+
+/*
+   Site description text
+   ========================================================================== */
+
+.site-description {
+  padding-left: 8vw;
+  padding-top: 30px;
+  padding-bottom: 1em;
+  margin: 0 auto;
+  font-family: $alt-font;
+  color: $primary-color;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+
+  font-size: 1.05em;
+
+  @include media($medium) {
+    font-size: 1.1em;
+    padding-top: 30px;
+  }
+
+  @include media($large) {
+    font-size: 1.12em;
+    padding-top: 30px;
+  }
+}
+
+blockquote.roadmap {
+  @include media($medium) {
+    padding: 20px 40px;
+  }
+}
+
