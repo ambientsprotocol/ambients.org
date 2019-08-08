@@ -17,7 +17,7 @@ image:
 
 <div class="buttons">
   <div class="button">
-    <a href="https://github.com/ambientsprotocol/whitepaper/raw/master/ambients.pdf">
+    <a href="https://ipfs.io/ipfs/QmPhPJE55GvqSz7Pwvkc8n9dbKmqGw6tUGTE1MgfNQvzsf">
       <svg xmlns="http://www.w3.org/2000/svg" width="41.774" height="53.502" viewBox="0 0 41.774 53.502"><defs><style>.a{fill:#ff3b00;}.b{fill:none;stroke:#fff;stroke-linejoin:round;}</style></defs><g transform="translate(-27.753 -27.753)"><path class="a" d="M55.226,19.546a.837.837,0,0,1,.549.27L69.554,33.6a.791.791,0,0,1,.279.673V72.087c-.052.74-.254.9-.952.952H29.011c-.74-.053-.9-.254-.952-.952v-51.6c.052-.74.254-.9.952-.952H55.1l.125.009Z" transform="translate(-0.307 8.216)"/><g transform="translate(41.629 45.593)"><path class="b" d="M342.107,190.931v17.864l-5.946-5.946" transform="translate(-336.161 -190.931)"/><path class="b" d="M348.994,222.657l5.94-5.947" transform="translate(-343.06 -204.791)"/></g></g></svg>
       <p class="button-text-whitepaper">Download the Whitepaper</p>
     </a>
